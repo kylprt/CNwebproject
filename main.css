@@ -1,0 +1,125 @@
+/* CSS is top to bottom */
+/* Below is the format:
+
+selector {
+    property: value;
+    property: value; 
+    }
+
+You can specify multiple selectors, seperated by commas.
+An asterisk targets the whole page.
+
+.classname - where class name is the name of a class specified in HTML
+(you need to add class = classname inside the opening brackets of the HTML)
+classes are not for unique elements.
+
+id - instead of a class, you can use an id. 
+They can only be named once, and do not start with numbers. you specify them as:
+#idname {}
+
+Box Model design - Layout (each is within the next):
+content
+padding - area around content
+border
+margin - area outside of border
+
+Box-sizing - you can specify a value for all padding etc.
+values can be added in the order: top right bottom left
+
+Values to control the Height and width of an element
+auto - browser defines the width
+length - defines width
+% - defines width as a percentage of the containing block
+
+color values:
+strings - text
+hex - (#XXXXXX)
+RGB - (XX, YY, ZZ)
+using rgb, you can add another value after 'z' which represents the opacity.
+*/
+
+body {
+    background-color: rgb(240, 240, 240);
+    color: rgb(44, 44, 44);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+body.night_mode {
+    background-color: rgb(39, 39, 39);
+    color: rgb(240, 240, 240);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: Ubuntu, sans-serif;
+    text-align: centre;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: Ubuntu, sans-serif;
+}
+
+.text_section {
+    font-family: calibri, sans-serif;
+    text-align: justify;
+}
+
+nav {
+    font-size: 30px;
+    font-family: ubuntu, sans-serif;
+    display: block;
+    padding: 5px;
+    margin: 10%;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 20%;
+}
+
+a:link {
+    color: coral;
+    text-decoration: none;
+}
+
+a:visited {
+    color: coral;
+    text-decoration: none;
+}
+  
+a:hover {
+    color: firebrick;
+    text-decoration: none;
+}
+
+.navbar {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contactbar{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: ubuntu, sans-serif;
+    margin: 10%
+}
+
+.image_with_text {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#photo_of_me {
+    width: 55%;
+    height: auto;
+    opacity: 0.95;
+    border: 5px solid;
+    border-radius: 6%;
+}
