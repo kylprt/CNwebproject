@@ -63,6 +63,12 @@ h2 {
     font-family: Ubuntu, sans-serif;
 }
 
+h3 {
+    font-size: 20px;
+    font-family: Ubuntu, sans-serif;
+    text-align: justify;
+}
+
 .text_section {
     font-family: calibri, sans-serif;
     text-align: justify;
